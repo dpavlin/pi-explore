@@ -67,3 +67,11 @@ flowchart TD
    - Each snippet is prepended with its step number and descriptor, e.g.:
      `[Step 36 | Assistant Response] 3. mailman 2.1 is a hard blocker.`
      `[Step 37 | User Prompt] migrate to mailman3`
+
+---
+
+## 3. Example Terminal Visualization
+
+The terminal capture below shows multi-word grep filtering and snippet highlighting executed via `pi-explore -a --grep koha rfid webserial | head -30`:
+
+![pi-explore grep demonstration](../assets/grep.png)

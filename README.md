@@ -61,8 +61,8 @@ pi-explore -a --first 2 --last 2
 ### 4. Search Sessions with Grep Filter
 Finds sessions containing all specified words case-insensitively:
 ```bash
-# Global search:
-pi-explore -a --grep mailman migration
+# Global multi-term search:
+pi-explore -a --grep koha rfid webserial
 
 # Restrict matches to within a single user-assistant turn:
 pi-explore -a --grep nginx ssl --turn
@@ -70,6 +70,9 @@ pi-explore -a --grep nginx ssl --turn
 # Search all fields including internal thoughts and tool command lines:
 pi-explore -a --grep "apt-get purge" --search-all
 ```
+
+![pi-explore grep demonstration](assets/grep.png)
+
 
 ### 5. Stream a Conversation Log to `less`
 Reads a specific session log with terminal color formatting:
